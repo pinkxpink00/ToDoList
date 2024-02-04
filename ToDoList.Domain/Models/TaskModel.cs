@@ -1,3 +1,5 @@
+using ToDoList.Domain.Enum;
+
 namespace ToDoList.Domain.Models;
 
 public class TaskModel

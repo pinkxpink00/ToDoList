@@ -29,23 +29,7 @@
             $.ajax({
                 type: 'POST',
                 url: '@Url.Action("Create", "Task")',
-                data: $('#createTaskForm').serialize(),
-                success: function (response) {
-                    Swal.fire({
-                        title: 'Информация',
-                        text: response.description,
-                        icon: 'success',
-                        confirmButtonText: 'Окей'
-                    })
-                },
-                error: function (response) {
-                     Swal.fire({
-                        title: 'Информация',
-                        text: response.responseJSON.description,
-                        icon: 'error',
-                        confirmButtonText: 'Окей'
-                     })
-                }
+                data: $('#createTaskForm').serialize()
             })
         });
     </script>

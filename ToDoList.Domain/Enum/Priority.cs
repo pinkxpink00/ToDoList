@@ -1,8 +1,9 @@
-namespace ToDoList.Domain.Enum;
-
-public enum Priority
+namespace ToDoList.Domain.Enum
 {
-    Easy = 1,
-    Medium = 2,
-    Hard = 3
+    public enum Priority
+    {
+        Easy = 1,
+        Medium = 2,
+        Hard = 3
+    }
 }
